@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="homepage.css">
+<script type="text/javascript" src="homepage.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Source+Sans+Pro:400" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+<body>
+    <!---Dropdown icon----->
+    <div onclick="dropdown()" id="nav-icon">
+        <svg version="1.1" class="nav-icon-open" id="nav-icon-open" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve" style="opacity: 1; display: block;">
+            <path d="M20,0.8C9.4,0.8,0.8,9.4,0.8,20S9.4,39.2,20,39.2S39.2,30.6,39.2,20S30.6,0.8,20,0.8z M30.1,28.3H9.9v-3h20.2V28.3zM30.1,21.5H9.9v-3h20.2V21.5z M30.1,14.7H9.9v-3h20.2V14.7z"></path>
+        </svg>
+        <svg version="1.1" class="nav-icon-close" id="nav-icon-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve" style="display: none; opacity: 0;">
+            <rect x="0.3" y="17.3" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 48.2843 20)" fill="#FFFFFF" width="39.5" height="5.3"></rect>
+            <rect x="0.3" y="17.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 20 -8.2843)" fill="#FFFFFF" width="39.5" height="5.3"></rect>
+        </svg>
+    </div>
+
+    <!---Dropdown Menu----->
+    <div class="nav-wrapper" id="navmenu" style="display: none; opacity: 0">
+        <div class="nav-main">
+            <li><a href="http://cslab1.bc.edu:8145" class="nav-link">Start Drawing</a>
+            </li>
+            <li><a href="index.html#c3" class="nav-link">How it Works</a>
+            </li>
+            <li><a href="index.html#c2" class="nav-link">Contact</a>
+            </li>
+            </li>
+        </div>
+    </div>
+
+    <!--main-Page-->
+    <section id="homepage">
+        <div class="hp-item">
+            <div class="hp-bg" style="background-image: url(hp.jpeg)"></div>
+            <div class="hp-year">
+                <p>Hua Hua</p>
+            </div>
+            <div class="hp-content">
+                <h1>Drawing</h1>
+                <p>Hua Hua means <a href="http://cslab1.bc.edu:8145" class="play-btn"> Draw </a> in Chinese.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--OurTeam-->
+    <section class="cover2" id="c2">
+        <h2 class="section-heading">OUR TEAM</h2>
+        <div class="team-member">
+            <img src="andre.jpeg" class="img-responsive img-circle" alt="">
+            <h4>Andre Wei, MCAS'18</h4>
+            <p class="text-muted">Back-end, Tech Lead</p>
+            <span class="fa-stack fa-2x ">
+           <i class="fa fa-circle fa-stack-2x"></i>
+             <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+               </span>
+            <span class="fa-stack fa-2x">
+               <i class="fa fa-circle fa-stack-2x"></i>
+                 <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+            </span>
+        </div>
+
+        <div class="team-member">
+            <img src="jiarui.jpeg" class="img-responsive img-circle" alt="">
+            <h4>Penny Hu, MCAS'18</h4>
+            <p class="text-muted">Front-end, UI</p>
+            <span class="fa-stack fa-2x">
+         <i class="fa fa-circle fa-stack-2x"></i>
+           <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+             </span>
+            <span class="fa-stack fa-2x">
+             <i class="fa fa-circle fa-stack-2x"></i>
+               <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+
+
+        <div class="team-member">
+            <img src="pearl.jpeg" class="img-responsive img-circle" alt="">
+            <h4>Pearl Yang, MCAS'17</h4>
+            <p class="text-muted">Back-end, DevOps</p>
+            <span class="fa-stack fa-2x">
+        <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+            </span>
+            <span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+         </span>
+        </div>
+
+        <section class="cover3" id="c3">
+            <h2 class="section-heading2">How It Works</h2>
+            <p class="text-white" style="text-align:center;">
+                To play HuaHua you need at least two players
+                <br>- although more than two players is gonna make it more fun!</p>
+
+            <ul class="timeline">
+                <li class="tl-item">
+                    <div class="tl-icon"></div>
+                    <div class="tl-step">Step 1</div>
+                    <div class="tl-content">
+                        <p>Enter your nick name following this format:/nick my nickname</p>
+                    </div>
+                </li>
+                <li class="tl-item tl-right">
+                    <div class="tl-icon"></div>
+                    <div class="tl-step">Step 2</div>
+                    <div class="tl-content">
+                        <p>A painter will be assigned</p>
+                    </div>
+                </li>
+                <li class="tl-item">
+                    <div class="tl-icon"></div>
+                    <div class="tl-step">Step 3</div>
+                    <div class="tl-content">
+                        <p>The game will start when the painter types "ready".</p>
+                    </div>
+                </li>
+                <li class="tl-item tl-right">
+                    <div class="tl-icon"></div>
+                    <div class="tl-step">Step 4</div>
+                    <div class="tl-content">
+                        <p>The painter will then be given a word that is hidden form all other players to draw.</p>
+                    </div>
+                </li>
+                <li class="tl-item">
+                    <div class="tl-icon"></div>
+                    <div class="tl-step">Step 5</div>
+                    <div class="tl-content">
+                        <p>Players race to guess the right word.</p>
+                    </div>
+                </li>
+                <li class="tl-item tl-right">
+                    <div class="tl-icon"></div>
+                    <div class="tl-step">Step 6</div>
+                    <div class="tl-content">
+                        <p>Whenever a player guesses the word correctly, the next turn will start and a new painter will be assigned.</p>
+                    </div>
+                </li>
+
+                <li class="tl-item">
+                    <div class="tl-icon"></div>
+                    <div class="tl-step">Step 7</div>
+                    <div class="tl-content">
+                        <p>Every player should clear their own whiteboard and wait for the painter to type ready and start drawing.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+
+        <!---make-play-selector------>
+        <div class="make-play-selector" id="makeplay" style="display: none; opacity: 0">
+            <!---icon---->
+            <div class="close-make-play" onclick="selector()" id="close-btn" style="display: none; opacity: 0">
+                <svg version="1.1" class="icon-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                    <rect x="0.3" y="17.3" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 48.2843 20)" fill="#FFFFFF" width="39.5" height="5.3"></rect>
+                    <rect x="0.3" y="17.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 20 -8.2843)" fill="#FFFFFF" width="39.5" height="5.3"></rect>
+                </svg>
+
+                <!--Draw-->
+                <div class="draw-segment">
+                    <a href="" class="selector-link" id="Draw">
+                        <div class="start-selector">
+                            <span>Draw</span>
+                        </div>
+                    </a>
+                    <!--Guess-->
+                    <div class="guess-segment">
+                        <a href="" class="selector-link" id="Guess">
+                            <div class="start-selector">
+                                <span>Guess</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

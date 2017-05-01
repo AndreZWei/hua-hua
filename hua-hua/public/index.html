@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>hua-hua</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class = "container">
+    <canvas class="whiteboard" ></canvas>
+  </div>
+
+  <div class="colors">
+    <div class="color pen"></div>
+    <div class="color black"></div>
+    <div class="color gray"></div>
+    <div class="color pink"></div>
+    <div class="color yellow"></div>
+    <div class="color orange"></div>
+    <div class="color red"></div>
+    <div class="color brown"></div>
+    <div class="color blue"></div>
+    <div class="color green"></div>
+    
+    
+    <div class="color white"></div>
+    
+
+  </div>
+  <div class = "refresh"></div>
+
+  <div class = "chat">
+    <ul id="messages"></ul>
+
+  <form action="">
+      <input id="m" autocomplete="off" />
+      <button>Send</button>
+    </form>
+
+
+  </div>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script>
+    $(function () {
+      var socket = io();
+      $('form').submit(function(){
+        socket.emit('chat message', $('#m').val());
+        $('#m').val('');
+        return false;
+      });
+      socket.on('chat message', function(msg){
+        $('#messages').append($('<li>').text(msg));
+        window.scrollTo(0, document.body.scrollHeight);
+      });
+    });
+  </script>
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>

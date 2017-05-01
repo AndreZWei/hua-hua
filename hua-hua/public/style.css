@@ -1,0 +1,140 @@
+
+/**
+ * Fix user-agent
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Canvas
+ */
+
+.container {
+
+
+  height: 100%;
+  width: 70%;
+  position: absolute;
+}
+
+.whiteboard {
+  position: absolute;
+  width:100%;
+  margin:2px;
+}
+
+.colors {
+  position: fixed;
+  padding: 10px;
+}
+
+.color {
+  display: inline-block;
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.2), inset 0 3px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.color.black {
+  background-color: black;
+  border-style: solid white;
+  border-width: 1px;
+}
+.color.red {
+  background-color: red;
+  border-style: solid white;
+  border-width: 1px;
+}
+.color.green {
+  background-color: green;
+  border-style: solid white;
+  border-width: 1px;
+}
+.color.blue {
+  background-color: blue;
+  border-style: solid white;
+  border-width: 1px;
+}
+.color.yellow {
+  background-color: yellow;
+  border-style: solid white;
+  border-width: 1px;
+}
+.color.brown {
+  background-color: brown;
+  border-style: solid white;
+  border-width: 1px;
+}
+.color.pink {
+  background-color: pink;
+  border-style: solid white;
+  border-width: 1px;
+}
+.color.gray {
+  background-color: gray;
+  border-style: solid white;
+  border-width: 1px;
+}
+.color.orange {
+  background-color: orange;
+  border-style: solid white;
+  border-width: 1px;
+}
+
+.color.pen{
+  background: url(pen.png) no-repeat center;
+  background-size: 46px 46px;
+  border-style: solid white;
+  border-width: 0.1px;
+}
+
+.color.white {
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+  background: url("era.svg") no-repeat center;
+  background-size: 48px 48px;
+  border-style: solid white;
+  border-width: 1px;
+  margin: 10px;
+  padding: 15px 0px 15px 5px;
+  position:fixed;
+  left:62%;
+}
+.refresh {
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+  border-radius: 50%;
+  background:url("refresh.png") no-repeat center;
+  background-size: 48px 48px;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.2), inset 0 3px 2px 0 rgba(0, 0, 0, 0.2);
+  border-style: solid white;
+  border-width: 0.5px;
+  margin: 10px;
+  padding: 13px 18px 13px 18px;
+  position:fixed;
+  left:62%;
+}
+
+/* { margin: 0; padding: 0; box-sizing: border-box; }*/
+.chat { font: 13px Helvetica, Arial; position: fixed; right: 0px;
+  border-width: 2px; border-style: solid ; width:30%; height:100%; border-left-color: gray; border-top: white;border-right:white;}
+form { background: grey; padding: 3px; position: fixed; right: 0px; bottom: 0; width: 30%; }
+form input { border: 0; padding: 10px; width: 85%; margin-right: .5%; }
+form button { color: white; width: 13%; background: black; border: none; padding: 10px; border-radius: 5px;}
+
+#messages { list-style-type: none; margin: 0; padding: 2px; position:fixed; left:70%;right:0;height: 93%;overflow-y: scroll;}
+#messages li { padding: 5px 10px; }
+#messages li:nth-child(odd) { background: #eee; }
+#messages { margin-bottom: 40px }

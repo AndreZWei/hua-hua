@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href= "homepage.css">
+<script type="text/javascript" src="homepage.js"></script>
+<body>
+  <!---Dropdown icon----->
+  <div onclick = "dropdown()" id = "nav-icon">
+    <svg version="1.1" class="nav-icon-open" id = "nav-icon-open" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve" style="opacity: 1; display: block;">
+            <path d="M20,0.8C9.4,0.8,0.8,9.4,0.8,20S9.4,39.2,20,39.2S39.2,30.6,39.2,20S30.6,0.8,20,0.8z M30.1,28.3H9.9v-3h20.2V28.3zM30.1,21.5H9.9v-3h20.2V21.5z M30.1,14.7H9.9v-3h20.2V14.7z"></path>
+        </svg>
+    <svg version="1.1" class="nav-icon-close" id = "nav-icon-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve" style="display: none; opacity: 0;">
+          <rect x="0.3" y="17.3" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 48.2843 20)" fill="#FFFFFF" width="39.5" height="5.3"></rect>
+          <rect x="0.3" y="17.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 20 -8.2843)" fill="#FFFFFF" width="39.5" height="5.3"></rect>
+    </svg>
+  </div>
+
+<!---Dropdown Menu----->
+  <div class="nav-wrapper" id = "navmenu" style="display: none; opacity: 0">
+        <div class="nav-main">
+            <li><a href="/home/weizb/project-xiaoruipearl/hua-hua/public/index.html" class="nav-link">Start Drawing</a></li>
+            <li><a href="#how-it-works" class="nav-link">How it Works</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+    </li>
+  </div>
+</div>
+
+  <div class = "page-wrapper">
+    <section class = "intro-panel clearfix" style= "background-color: rgb(17, 166, 238);">
+      <div class = "bg-fader"></div>
+      <div class = "intro-text-wrapper">
+          <div class = "intro-text">
+            <div class = "intro-logo">Huà Huà</div>
+            <a href class="play-btn" onclick="selector()"> Draw </a>
+          </div>
+      </div>
+    </section>
+  </div>
+
+  <!---Our-Teams---->
+
+
+  <!---make-play-selector------>
+  <div class="make-play-selector" id = "makeplay" style = "display: none; opacity: 0">
+    <!---icon---->
+    <div class="close-make-play" onclick="selector()" id = "close-btn" style = "display: none; opacity: 0">
+            <svg version="1.1" class="icon-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                <rect x="0.3" y="17.3" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 48.2843 20)" fill="#FFFFFF" width="39.5" height="5.3"></rect>
+                <rect x="0.3" y="17.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 20 -8.2843)" fill="#FFFFFF" width="39.5" height="5.3"></rect>
+            </svg>
+
+            <!--Draw-->
+            <div class="draw-segment">
+            <a href="" class="selector-link" id="Draw">
+                <div class="start-selector">
+                    <span>Draw</span>
+                </div>
+            </a>
+            <!--Guess-->
+            <div class="guess-segment">
+            <a href="" class="selector-link" id="Guess">
+                <div class="start-selector">
+                    <span>Guess</span>
+                </div>
+            </a>
+        </div>
+        </div>
+        </div>
+  </div>
+</body>
+</html>

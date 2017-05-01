@@ -1,0 +1,19 @@
+{
+  "name": "hua-hua",
+  "version": "1.0.0",
+  "description": "A simple interactive piktionary web application",
+  "main": "index.js",
+  "keywords": [
+    "socket.io",
+    "huahua"
+  ],
+  "dependencies": {
+    "express": "4.9.x",
+    "socket.io": "latest"
+  },
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "Damien Arrachequesne",
+  "license": "MIT"
+}
